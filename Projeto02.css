@@ -1,0 +1,235 @@
+/*CLASSES AUXILIARES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{clear: both;}
+/******/
+
+/*HEADER*/
+header{
+    padding: 1px 0;
+    background-color: #eeeeee;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo1 img{
+    width: 200px;
+    float: left;
+    padding: 10px 10px;
+}
+
+.logo2 img{
+    width: 120px;
+    float: right;   
+    margin-right: 40px;
+}
+/*********/
+
+/*BANNER/FORMULÁRIO*/
+    section.banner-form{
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-banner{
+        height: 500px;
+        background-image: url(bgimo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .form-container h2{
+        color: rgb(105, 97, 97);
+        background-color: rgba(234 , 236, 239);
+        padding: 23px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-container{
+        float: right;
+        width: 350px;
+        height: 95%;
+        background-color: white;
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+
+    .form-container form{
+        margin-top:8px;
+        padding: 10px 30px;
+    }
+
+    .form-container form input[type=text]{
+        width: 100%;
+        height: 38px;
+        border: 1px solid #ccc;
+        outline: 0;
+        padding-left: 12px;
+        margin-top: 3px;
+        font-size: 15px;
+    }
+
+    .form-container form p{
+        font-size: 18px;
+        color: #525252;
+    }
+
+    .form-wrapper:not(:first-child){
+        margin-top: 20px;
+    }
+
+    .camposobri{
+        margin-top: 26px;
+        font-weight: bold;
+    }
+
+    .form-container form input[type=submit]{
+        background-color: #a30419;
+        text-transform: uppercase;
+        width: 100%;
+        height: 50px;
+        color: white;
+        border: 0;
+        outline: 0;
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .form-container form input[type=submit]:hover{
+        background-color: #5e0303;
+    }
+    /*********/
+
+    /*CHAMADA*/
+    section.chamada{
+        width: 100%;
+        background-color:rgb(248, 72, 72);
+        padding: 40px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    section.chamada h2{
+        width: 96%;
+        max-width: 760px;
+        display: inline-block;
+        text-align: center;
+        font-size: 28px;
+        color: white;
+    }
+
+    section.chamada p{
+        font-size: 22px;
+        margin-top: 8px;
+        font-weight: normal;
+        color: white;
+    }
+
+    .chamada-container{
+        padding: 10px 0;
+    }
+    /********/
+
+    /*MOSAICO*/
+    .flex-mosaico{
+        display: flex;
+        background-color: rgb(234 236 239);
+    }
+
+    .item1-mosaico{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 60%;
+    }
+
+    .item2-mosaico{
+        width: 40%;
+        padding: 40px;
+        color: black;
+        font-size: 19px;
+    }
+    /*********/
+
+    /*RODAPÉ*/
+    footer{
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+        background: #eeeeee;
+    }
+
+    footer p{
+        margin: 8px;
+        font-size: 17px;
+    }
+
+    footer p a{
+        color: black;
+        font-weight: bold;
+    }
+
+    footer img{
+        width: 150px;
+        
+    }
+    /********/
+
+    /*RESPONSIVO*/
+    @media screen and (max-width:500px){
+        header{
+            text-align: center;
+        }
+    
+        .logo1 img, .logo2 img{
+            float: none;
+        }
+    
+        .logo2 img{
+            margin-top: 10px;
+            margin-left: 60px;
+        }
+
+        .form-container{
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width:768px){
+        .flex-mosaico{display: block;}
+
+        .item1-mosaico{width: 100%; padding-top: 60%;}
+
+        .item2-mosaico{width: 100%;}
+    }
+
+    @media screen and (max-width:960px){
+        .container-banner{text-align: center;}
+    
+        .form-container{
+            display: inline-block;
+            float: none;
+            margin-left: 10%;
+        }
+
+        .camposobri{margin-top: 10px;}
+    }
+    /*******/
+
+
